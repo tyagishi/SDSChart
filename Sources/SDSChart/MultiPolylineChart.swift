@@ -10,9 +10,9 @@ import SDSCGExtension
 import SwiftUIDebugUtil
 
 public class MultiPolylineData: ObservableObject {
-    @Published var polylineGraphData: [PolylineChartData]
+    @Published public var polylineGraphData: [PolylineChartData]
     
-    init(_ data: [PolylineChartData]) {
+    public init(_ data: [PolylineChartData]) {
         self.polylineGraphData = data
     }
 }

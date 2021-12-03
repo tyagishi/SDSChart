@@ -53,7 +53,7 @@ public struct PieChartPieceData: Identifiable {
 }
 
 extension PieChartData {
-    static func sample() -> PieChartData {
+    static public func sample() -> PieChartData {
         return PieChartData([PieChartPieceData(Angle(degrees: 15), color: Color.red),
                              PieChartPieceData(Angle(degrees: 20), color: Color.blue),
                              PieChartPieceData(Angle(degrees: 40), color: Color.green, offset: false),

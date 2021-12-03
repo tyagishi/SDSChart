@@ -13,9 +13,9 @@ import SwiftUI
 // note:PolylineGraphData have data for one polyline
 public class PolylineChartData: ObservableObject, Identifiable {
     public let id: UUID
-    @Published var idPoints:[IdentifiablePoint]
-    @Published var showXAxis: Bool
-    @Published var showYAxis: Bool
+    @Published public var idPoints:[IdentifiablePoint]
+    @Published public var showXAxis: Bool
+    @Published public var showYAxis: Bool
     let xAxisLabelPos: [IdentifiablePoint]
     let yAxisLabelPos: [IdentifiablePoint]
 

@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-struct PolylineView: View {
+public struct PolylineView: View {
     @ObservedObject var polylineData:PolylineChartData
 
     let labelOffset: CGVector = CGVector(dx: -5, dy: -10)
     
-    init(_ polylineData: PolylineChartData) {
+    public init(_ polylineData: PolylineChartData) {
         self.polylineData = polylineData
     }
     
-    var body: some View {
+    public var body: some View {
         GeometryReader { geom in
             ZStack {
 

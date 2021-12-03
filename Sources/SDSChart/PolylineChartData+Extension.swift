@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 extension PolylineChartData {
-    static func sample() -> PolylineChartData {
+    static public func sample() -> PolylineChartData {
         return PolylineChartData([IdentifiablePoint(x: 0.0, y: 20),
                                   IdentifiablePoint(x: 10.0, y: 26),
                                   IdentifiablePoint(x: 12, y: 18),
@@ -24,7 +24,7 @@ extension PolylineChartData {
             return String("Hello")
         })
     }
-    static func sampleScale215() -> PolylineChartData {
+    static public func sampleScale215() -> PolylineChartData {
         return PolylineChartData([IdentifiablePoint(x: 0.0, y: 20),
                                   IdentifiablePoint(x: 10.0, y: 26),
                                   IdentifiablePoint(x: 12, y: 18),
@@ -57,7 +57,7 @@ extension PolylineChartData {
         }
         )
     }
-    static func randomSample(_ num: Int) -> PolylineChartData {
+    static public func randomSample(_ num: Int) -> PolylineChartData {
         var points:[IdentifiablePoint] = []
         for index in 0..<20 {
             let sample = IdentifiablePoint(x: Double(index) * 10.0, y: Double.random(in: (0.0)..<(100.0)))
