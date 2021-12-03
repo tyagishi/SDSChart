@@ -24,7 +24,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "SDSChart",
-            dependencies: []),
+            dependencies: ["SDSViewExtension"]),
         .testTarget(
             name: "SDSChartTests",
             dependencies: ["SDSChart"]),
